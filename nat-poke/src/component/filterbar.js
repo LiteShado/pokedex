@@ -1,6 +1,6 @@
 
 
-const filterbar = (props) = {
+const filterbar = (props) => {
     return (
         <form>
             <input type="text" placeholder ="search!"

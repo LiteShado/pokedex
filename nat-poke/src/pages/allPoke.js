@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import filterbar from './component/filterbar'
 
-const allPoke = async (props) => {
+
+const allPoke = (props) => {
 
     const [allpoke, setallpoke] = useState([])
     const [search, setSearch] = useState('')
