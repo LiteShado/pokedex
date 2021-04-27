@@ -1,41 +1,70 @@
-# Pokedex
+# Getting Started with Create React App
 
-## User Stories
-- I can go to the All Pokemon page and see a list of all pokemon, fetched from https://pokeapi.co/
-- I can filter this list using a search bar
-- Each pokemon on this page has a Fav button next to it
-- When I click the Fav button, the pokemon is added to my favs list via a POST to the backend
-- An already-faved pokemon has its Fav button replaced with an icon that indicates that I've already faved it
-- I can go to the Faved Pokemon page and see a list of all my faved pokemon (fetched from the backend)
-- Stretch: for each of the faved pokemon, I see additional data from the api (types, stats, image, etc)
-- Stretch: I can click the already-faved icon for any pokemon and remove it from my faves
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Setup
-Make a react app in this repo for the frontend. In a separate folder, clone down the backend from here: https://github.com/SEI-ATL-3-8/pokedex-backend. Run the backend locally to save your favs!
+## Available Scripts
 
-## Road Map
-### 1.
-- set up your routes and page transitions
-### 2.
-- all pokemon: fetch data & save to state
-- pass into pokemon list
-- display all w/ fav buttons, don't worry about whether they should actually have fav buttons yet, buttons just log "${name} was faved"
-### 3.
-- set up search bar
-- make search bar component
-- pass in searchTerm & setter
-- filter in allPokemonPage
-### 4.
-- introduce the idea of faving: it needs a new piece of state, what should it look like & where should it live? array of faved pokemons from backend, lives in App
-- start to fetch fav pokemon data from backend; maybe detour to env var? maybe they clone down the whole backend repo and run it locally? 
-- fetch fav data, store in App, pass into favs list page
-- reuse pokemonList
-### 5.
-- pass favs into allPokemon page to conditionally show red heart
-### 6.
-- on clicking an empty heart, post to backend
-- after successful post, reload favs
-### 7.
-- on clicking on a full heart, delete to backend & reload
-### 8.
-- deploy???
+In the project directory, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
